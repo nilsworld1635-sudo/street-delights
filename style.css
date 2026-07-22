@@ -254,3 +254,45 @@ footer{
 .whatsapp a:hover{
     transform:scale(1.1);
 }
+
+/* Contact */
+
+.contact{
+    padding:80px 8%;
+    background:#111;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#ff9800;
+    margin-bottom:50px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact-box{
+    background:#1d1d1d;
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.contact-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,152,0,.2);
+}
+
+.contact-box h3{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#ddd;
+    line-height:1.8;
+}
