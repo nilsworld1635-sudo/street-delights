@@ -363,3 +363,77 @@ footer{
     color:#ddd;
     line-height:1.8;
 }
+
+/* Premium Menu */
+
+.menu-section{
+    padding:80px 8%;
+    background:#111;
+}
+
+.menu-section h2{
+    text-align:center;
+    color:#ff9800;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.menu-card{
+    background:#1a1a1a;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-content{
+    padding:20px;
+}
+
+.menu-content h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.menu-content p{
+    color:#bbb;
+    line-height:1.6;
+}
+
+.price-row{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price-row span{
+    color:#ff9800;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.price-row button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:30px;
+    cursor:pointer;
+}
