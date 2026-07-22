@@ -80,9 +80,16 @@ border-bottom:1px solid rgba(255,255,255,0.08);
         display:block;
     }
 
-    .nav-links{
-        display:none;
-    }
+ .nav-links{
+    display:none;
+    width:100%;
+    text-align:center;
+    margin-top:15px;
+}
+
+.nav-links li{
+    margin:12px 0;
+}
 
 }
 
