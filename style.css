@@ -84,7 +84,7 @@ border-bottom:1px solid rgba(255,255,255,0.08);
     display:none;
     width:90%;
     max-width:350px;
-    margin:15px auto;
+    margin:10px auto;
     text-align:center;
     background:#161616;
     border-top:4px solid #ff9800;
@@ -95,7 +95,7 @@ border-bottom:1px solid rgba(255,255,255,0.08);
  }
 
 .nav-links li{
-    margin:05px 0;
+    margin:02px 0;
 }
 
 }
