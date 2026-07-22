@@ -82,10 +82,16 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 
  .nav-links{
     display:none;
-    width:100%;
+    width:90%;
+    max-width:350px;
+    margin:15px auto;
     text-align:center;
-    margin-top:15px;
-}
+    background:#161616;
+    border-top:4px solid #ff9800;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+    padding:20px 0;
+ }
 
 .nav-links li{
     margin:08px 0;
