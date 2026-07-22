@@ -226,3 +226,31 @@ footer{
 }
 
 }
+
+/* Floating WhatsApp */
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:20px;
+    z-index:999;
+}
+
+.whatsapp a{
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.whatsapp a:hover{
+    transform:scale(1.1);
+}
