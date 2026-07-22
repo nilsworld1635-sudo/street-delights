@@ -70,7 +70,7 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 .menu-toggle{
     display:none;
     font-size:28px;
-    color:#fff9980;
+    color:#ff9980;
     cursor:pointer;
 }
 
@@ -233,7 +233,6 @@ footer{
 .hero h1{
     font-size:40px;
 }
-}
 
 /* Gallery */
 
@@ -287,8 +286,6 @@ footer{
 
 .features h2{
     font-size:32px;
-}
-
 }
 
 /* Floating WhatsApp */
@@ -346,7 +343,6 @@ footer{
     border-radius:25px;
     border-top:4px solid #ff9800;
     transition:.3s;
-}
 }
 
 .contact-box:hover{
