@@ -429,6 +429,31 @@ footer{
     font-weight:bold;
 }
 
+@media (max-width:768px){
+
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu-card,
+    .food-card{
+        width:100%;
+    }
+
+    .menu-card img,
+    .food-card img{
+        height:220px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
 .price-row button{
     background:#ff9800;
     color:white;
