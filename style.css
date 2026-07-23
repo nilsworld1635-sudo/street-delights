@@ -458,3 +458,65 @@ footer{
     border-radius:30px;
     cursor:pointer;
 }
+    .reviews{
+    padding:80px 10%;
+    background:#111;
+    text-align:center;
+}
+
+.reviews h2{
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+.rating-box{
+    margin-bottom:40px;
+}
+
+.rating-box h3{
+    font-size:40px;
+    color:#fff;
+}
+
+.rating-box p{
+    color:#ccc;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.review-card{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-8px);
+}
+
+.review-card h4{
+    color:#fff;
+}
+
+.review-card span{
+    color:gold;
+    font-size:20px;
+}
+
+.review-card p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+.review-buttons{
+    margin-top:40px;
+}
+
+.review-buttons .btn{
+    margin:10px;
+}
