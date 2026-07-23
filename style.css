@@ -484,8 +484,14 @@ footer{
 
 .review-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(2,1fr);
     gap:25px;
+}
+
+@media (max-width:768px){
+    .review-container{
+        grid-template-columns:1fr;
+    }
 }
 
 .review-card{
