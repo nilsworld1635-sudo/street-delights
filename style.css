@@ -95,13 +95,16 @@ section{
 }
 
 .nav-menu a{
-    color:white;
-    font-weight:500;
-    transition:.3s;
+    color:#fff;
+    font-size:1.15rem;
+    font-weight:600;
+    letter-spacing:1px;
+    transition:.3s ease;
 }
 
 .nav-menu a:hover{
     color:#ff8c00;
+    transform:scale(1.08);
 }
 
 .hamburger{
