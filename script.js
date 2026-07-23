@@ -1,29 +1,16 @@
-// Smooth scrolling for navigation links
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute("href"));
-
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
 
-// Navbar shadow on scroll
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-window.addEventListener("scroll", () => {
+    link.addEventListener("click", () => {
 
-    const header = document.querySelector("header");
+        navLinks.classList.remove("active");
 
-    if (window.scrollY > 50) {
-        header.style.boxShadow = "0 5px 20px rgba(0,0,0,.35)";
-    } else {
-        header.style.boxShadow = "none";
-    }
+    });
 
 });
