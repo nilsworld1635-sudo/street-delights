@@ -124,11 +124,11 @@ section{
 
 position:fixed;
 
-top:0;
+top:78;
 right:-100%;
 
 width:280px;
-height:100vh;
+height: calc(100vh - 78px);
 
 background:#111;
 
