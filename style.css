@@ -445,7 +445,7 @@ footer{
         height:220px;
     }
 
-    .contact-grid{
+    .contact-container{
         grid-template-columns:1fr;
     }
 }
