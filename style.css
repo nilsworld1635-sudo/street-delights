@@ -121,38 +121,27 @@ section{
 @media(max-width:768px){
 
 .nav-menu{
+    position:fixed;
+    top:78px;
+    right:-100%;
+    width:100%;
+    height:calc(100vh - 78px);
 
-position:fixed;
+    background:rgba(10,10,10,.97);
+    backdrop-filter:blur(20px);
 
-top:78px;
-right:-100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
 
-width:280px;
-height: calc(100vh - 78px);
-
-background:#111;
-
-display:flex;
-flex-direction:column;
-
-justify-content:center;
-align-items:center;
-
-transition:.4s;
-
-gap:28px;
+    transition:all .45s ease;
 }
 
 .nav-menu.active{
-right:0;
+    right:0;
 }
-
-.hamburger{
-display:flex;
-}
-
-}
-
 
 
 /* =========================
