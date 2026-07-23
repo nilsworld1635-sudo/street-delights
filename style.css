@@ -482,48 +482,38 @@ footer{
     color:#ccc;
 }
 
-.review-container{
+.google-reviews{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
-}
-
-@media (max-width:768px){
-    .review-container{
-        grid-template-columns:1fr;
-    }
-}
-
-.review-card{
-    background:red;
-    color:white;
-    padding:25px;
-    border-radius:15px;
-    border:3px solid yellow;
-}
-
-.review-card:hover{
-    transform:translateY(-8px);
-}
-
-.review-card h4{
-    color:#fff;
-}
-
-.review-card span{
-    color:gold;
-    font-size:20px;
-}
-
-.review-card p{
-    color:#ddd;
-    line-height:1.7;
-}
-
-.review-buttons{
     margin-top:40px;
 }
 
-.review-buttons .btn{
-    margin:10px;
+.google-review-card{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #333;
+    color:#fff;
+    transition:.3s;
+}
+
+.google-review-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff9800;
+}
+
+.google-review-card h4{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.google-review-card span{
+    color:gold;
+    font-size:22px;
+}
+
+.google-review-card p{
+    color:#ccc;
+    line-height:1.8;
 }
