@@ -158,13 +158,13 @@ min-height:70px;
 
     position:fixed;
 
-    top:78px;
+    top:70px;
 
     right:-100%;
 
     width:100%;
 
-    height:calc(100vh - 78px);
+    height:calc(100vh - 70px);
 
     background:#0B0B0B;
 
