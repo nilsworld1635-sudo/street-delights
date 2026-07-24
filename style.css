@@ -166,6 +166,16 @@ img{
     width:220px;
     text-align:center;
 }
+   .hero-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero-buttons a{
+    width:90%;
+    max-width:320px;
+    text-align:center;
+}
 
 }
 
