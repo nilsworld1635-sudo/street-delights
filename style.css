@@ -428,7 +428,21 @@ img{
     transform:translateY(-10px);
     box-shadow:0 25px 55px rgba(255,122,0,.25);
 }
+.menu-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
 
+.menu-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.menu-footer{
+    margin-top:auto;
+}
 .menu-content{
     padding:22px;
 }
