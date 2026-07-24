@@ -198,7 +198,7 @@ img{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding-top:90px;
+    padding-top:160px;
     text-align:center;
     background:
     linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.55)),
@@ -507,15 +507,12 @@ img{
 }
 
 .review-card{
-    background:#1b1b1b;
-    padding:25px;
-    border-radius:18px;
-    transition:.3s;
+    transition:.35s ease;
 }
 
 .review-card:hover{
     transform:translateY(-8px);
-    background:#242424;
+    box-shadow:0 20px 40px rgba(255,122,0,.15);
 }
 
 .stars{
