@@ -783,17 +783,15 @@ font-size:28px;
 color:#ff8c00;
 cursor:pointer;
 }
-
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
 @media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
 
     .menu-grid{
         grid-template-columns:1fr;
     }
 
 }
-}
+
