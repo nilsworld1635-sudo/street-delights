@@ -63,7 +63,8 @@ img{
 .navbar{
     max-width:1200px;
     margin:auto;
-    padding:18px 22px;
+    padding:12px 20px;
+min-height:70px;
 
     display:flex;
     align-items:center;
@@ -76,12 +77,12 @@ img{
     gap:12px;
     color:#FF7A00;
     font-weight:700;
-    font-size:1.35rem;
+    font-size:1.1rem;
 }
 
 .logo img{
-    width:48px;
-    height:48px;
+    width:42px;
+    height:42px;
     object-fit:contain;
     border-radius:50%;
 }
