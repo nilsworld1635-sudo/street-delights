@@ -186,7 +186,13 @@ img{
     max-width:320px;
     text-align:center;
 }
+.menu-grid{
+    grid-template-columns:1fr;
+}
 
+.menu-card{
+    width:100%;
+}
 }
 
 
