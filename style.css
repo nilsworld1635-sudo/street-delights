@@ -135,6 +135,9 @@ min-height:70px;
 ================================ */
 
 @media(max-width:768px){
+   .hamburger{
+    display:block;
+   }
 
 .logo img{
     width:40px;
