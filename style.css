@@ -173,7 +173,14 @@ img{
 /* =========================
    HERO
 ========================= */
+.hero{
+    min-height:100vh;
+    padding-top:140px;
+}
 
+.hero-content{
+    padding:0 20px;
+}
 .hero{
     height:100vh;
     display:flex;
