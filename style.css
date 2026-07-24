@@ -225,11 +225,11 @@ min-height:70px;
    HERO
 ========================= */
 .hero{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding-top:160px;
+    padding:180px 20px 100px;
     text-align:center;
     background:
     linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.55)),
