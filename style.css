@@ -68,9 +68,19 @@ img{
 }
 
 .logo{
-    font-size:1.6rem;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#FF7A00;
     font-weight:700;
-    color:var(--orange);
+    font-size:1.6rem;
+}
+
+.logo img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+    border-radius:50%;
 }
 
 .nav-menu{
