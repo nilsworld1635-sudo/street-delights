@@ -981,4 +981,138 @@ footer p{
     }
 
 }
+/* ==========================
+   STEAM ANIMATION
+========================== */
+
+.steam{
+    position:absolute;
+    width:18px;
+    height:90px;
+    border-radius:50%;
+    background:rgba(255,255,255,.35);
+    filter:blur(10px);
+    opacity:0;
+    z-index:10;
+    animation:steam 4s infinite ease-in-out;
+}
+
+.steam1{
+    left:48%;
+    top:18%;
+    animation-delay:0s;
+}
+
+.steam2{
+    left:56%;
+    top:20%;
+    animation-delay:1.2s;
+}
+
+.steam3{
+    left:40%;
+    top:22%;
+    animation-delay:2.2s;
+}
+
+@keyframes steam{
+
+    0%{
+        transform:translateY(0) scale(.7);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.5;
+    }
+
+    50%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-120px) scale(2);
+        opacity:0;
+    }
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:991px){
+
+.hero{
+    padding:120px 25px 60px;
+}
+
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    font-size:16px;
+    margin:auto;
+}
+
+.hero-rating{
+    margin:30px auto 0;
+}
+
+.hero-services{
+    justify-content:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.pickup-note{
+    text-align:center;
+}
+
+.hero-momo{
+    max-width:360px;
+}
+
+.hero-glow{
+    width:320px;
+    height:320px;
+}
+
+}
+
+@media (max-width:576px){
+
+.hero-left h1{
+    font-size:34px;
+}
+
+.hero-tag{
+    font-size:14px;
+}
+
+.hero-services span{
+    font-size:14px;
+    padding:10px 14px;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    text-align:center;
+}
+
+.hero-momo{
+    max-width:300px;
+}
+
+}
 
