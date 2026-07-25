@@ -1,7 +1,6 @@
-/* ===================================
-   STREET DELIGHTS 2.0
-   GLOBAL STYLES
-=================================== */
+/* ==========================================
+   STREET DELIGHTS v3.0
+========================================== */
 
 *{
     margin:0;
@@ -14,120 +13,235 @@ html{
 }
 
 :root{
-    --bg:#0B0B0B;
-    --card:#171717;
-    --orange:#FF7A00;
-    --orange-hover:#FF9D2F;
-    --white:#FFFFFF;
-    --gray:#BDBDBD;
+
+    --primary:#ff7a00;
+    --primary-dark:#e66a00;
+    --secondary:#25D366;
+
+    --bg:#0d0d0d;
+    --card:#181818;
+
+    --white:#ffffff;
+    --text:#d8d8d8;
+    --border:rgba(255,255,255,.08);
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
 }
 
 body{
+
     font-family:'Poppins',sans-serif;
     background:var(--bg);
     color:var(--white);
     overflow-x:hidden;
-}
-section{
-    padding: 80px 0;
-}
 
-a{
-    text-decoration:none;
-}
-
-ul{
-    list-style:none;
 }
 
 img{
-    max-width:100%;
+
     display:block;
+    width:100%;
+
 }
 
-/* ===================================
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:100px 8%;
+
+}
+
+.section-heading{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.section-heading span{
+
+    color:var(--primary);
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+    font-size:48px;
+    margin:18px 0;
+
+}
+
+.section-heading p{
+
+    color:var(--text);
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+/* ==========================================
    HEADER
-=================================== */
+========================================== */
 
 .header{
+
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    background:rgba(11,11,11,.92);
-    backdrop-filter:blur(18px);
+
+    background:rgba(10,10,10,.92);
+    backdrop-filter:blur(15px);
+
     z-index:999;
+
     border-bottom:1px solid rgba(255,122,0,.15);
+
 }
 
 .navbar{
-    max-width:1200px;
+
+    max-width:1300px;
+
+    height:80px;
+
     margin:auto;
-    padding:12px 20px;
-min-height:70px;
 
     display:flex;
-    align-items:center;
+
     justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
 }
 
 .logo{
+
     display:flex;
+
     align-items:center;
+
     gap:12px;
-    color:#FF7A00;
+
+    color:#fff;
+
+    font-size:24px;
+
     font-weight:700;
-    font-size:1.1rem;
+
 }
 
 .logo img{
-    width:42px;
-    height:42px;
-    object-fit:contain;
+
+    width:48px;
+
+    height:48px;
+
     border-radius:50%;
+
 }
 
 .nav-menu{
+
     display:flex;
-    gap:28px;
-    align-items:center;
+
+    gap:30px;
+
 }
 
 .nav-menu a{
-    color:white;
-    font-weight:500;
+
+    color:#fff;
+
     transition:.3s;
+
 }
 
 .nav-menu a:hover{
-    color:var(--orange);
+
+    color:var(--primary);
+
 }
 
-.mobile-btn a{
-    background:var(--orange);
-    color:white !important;
-    padding:10px 18px;
-    border-radius:30px;
+.nav-actions{
+
+    display:flex;
+
+    gap:12px;
+
 }
 
-.mobile-btn a:hover{
-    background:var(--orange-hover);
+.call-btn,
+.whatsapp-btn{
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.call-btn{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.whatsapp-btn{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+}
+
+.call-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-3px);
+
 }
 
 .hamburger{
-    display:none;
-    background:none;
-    border:none;
-    cursor:pointer;
-}
 
-.hamburger span{
-    display:block;
-    width:28px;
-    height:3px;
-    margin:6px 0;
-    border-radius:20px;
-    background:white;
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:30px;
+
+    cursor:pointer;
+
 }
 
 /* ===============================
@@ -232,68 +346,376 @@ min-height:70px;
 }
 }
 
-/* =========================
+/* ==========================================
    HERO
-========================= */
+========================================== */
+
 .hero{
+
     min-height:100vh;
+
     display:flex;
-    justify-content:center;
+
     align-items:center;
-    padding:180px 20px 100px;
-    text-align:center;
-    background:
-    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1800&q=80");
-    background-size:cover;
-    background-position:center;
+
+    background:linear-gradient(135deg,#0d0d0d,#181818,#111);
+
+    overflow:hidden;
+
+    position:relative;
+
+    padding-top:140px;
+
 }
 
-.hero-content{
-    max-width:750px;
-    padding:0 20px;
-}
+.hero-container{
 
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-}
+    width:100%;
 
-.hero span{
-    color:#ff8c00;
-}
+    max-width:1300px;
 
-.hero p{
-    font-size:1.2rem;
-    color:#ddd;
-    margin-bottom:35px;
-}
-.hero-features{
+    margin:auto;
 
-    margin-top:50px;
     display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,122,0,.12);
+
+    border:1px solid rgba(255,122,0,.35);
+
+    color:var(--primary);
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero-left h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero-left h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero-left p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:var(--text);
+
+    max-width:620px;
+
+}
+
+.hero-rating{
+
+    margin-top:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    width:max-content;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+}
+
+.rating-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
     justify-content:center;
-    gap:20px;
+
+    align-items:center;
+
+    background:var(--primary);
+
+    font-size:24px;
+
+}
+
+.hero-services{
+
+    display:flex;
+
+    gap:15px;
+
     flex-wrap:wrap;
 
+    margin-top:35px;
+
 }
 
-.hero-features div{
+.hero-services span{
 
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(12px);
-    padding:12px 22px;
-    border-radius:40px;
-    border:1px solid rgba(255,122,0,.25);
-    font-weight:500;
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    background:#202020;
+
     transition:.3s;
 
 }
 
-.hero-features div:hover{
+.hero-services span:hover{
+
+    background:var(--primary);
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:16px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
 
     transform:translateY(-4px);
-    border-color:#ff8c00;
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--secondary);
+
+    color:var(--secondary);
+
+    padding:16px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+}
+
+.pickup-note{
+
+    margin-top:22px;
+
+    color:#ffcf8b;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    filter:blur(140px);
+
+    opacity:.28;
+
+}
+
+.hero-image{
+
+    max-width:520px;
+
+    position:relative;
+
+    z-index:5;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+/* ==========================================
+   STEAM
+========================================== */
+
+.steam{
+
+    position:absolute;
+
+    width:18px;
+
+    height:90px;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:50%;
+
+    filter:blur(10px);
+
+    opacity:0;
+
+    z-index:8;
+
+    animation:steam 4s infinite;
+
+}
+
+.steam1{
+
+    top:15%;
+
+    left:45%;
+
+}
+
+.steam2{
+
+    top:18%;
+
+    left:53%;
+
+    animation-delay:1s;
+
+}
+
+.steam3{
+
+    top:20%;
+
+    left:40%;
+
+    animation-delay:2s;
+
+}
+
+@keyframes steam{
+
+0%{
+
+opacity:0;
+
+transform:translateY(0) scale(.7);
+
+}
+
+30%{
+
+opacity:.7;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translateY(-120px) scale(2);
+
+}
 
 }
 /* =========================
