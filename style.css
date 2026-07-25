@@ -232,120 +232,70 @@ min-height:70px;
 }
 }
 
-<!-- ================= HERO ================= -->
+/* =========================
+   HERO
+========================= */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:180px 20px 100px;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+}
 
-<section class="hero" id="home">
+.hero-content{
+    max-width:750px;
+    padding:0 20px;
+}
 
-<div class="hero-container">
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
 
-    <!-- LEFT SIDE -->
+.hero span{
+    color:#ff8c00;
+}
 
-    <div class="hero-left">
+.hero p{
+    font-size:1.2rem;
+    color:#ddd;
+    margin-bottom:35px;
+}
+.hero-features{
 
-        <span class="hero-tag">
-            🥟 Freshly Steamed • Made to Order
-        </span>
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 
-        <h1>
-            Lonavala's Favourite
-            <span>Street Food</span>
-            Destination
-        </h1>
+}
 
-        <p>
-            Fresh Momos, Burgers, Sandwiches, Pasta, Fries,
-            Waffles, Pav Bhaji & Pulao — prepared fresh every day
-            with quality ingredients and authentic flavours.
-        </p>
+.hero-features div{
 
-        <!-- Rating Card -->
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:12px 22px;
+    border-radius:40px;
+    border:1px solid rgba(255,122,0,.25);
+    font-weight:500;
+    transition:.3s;
 
-        <div class="hero-rating">
+}
 
-            <div class="rating-star">
-                ⭐
-            </div>
+.hero-features div:hover{
 
-            <div>
+    transform:translateY(-4px);
+    border-color:#ff8c00;
 
-                <h3>4.9 Google Rating</h3>
-
-                <span>15+ Happy Reviews</span>
-
-            </div>
-
-        </div>
-
-        <!-- Service Badges -->
-
-        <div class="hero-services">
-
-            <span>🍽️ Dine In</span>
-
-            <span>🥡 Takeaway</span>
-
-            <span>🛵 Swiggy</span>
-
-            <span>🟠 Zomato</span>
-
-        </div>
-
-        <!-- Buttons -->
-
-        <div class="hero-buttons">
-
-            <a href="#menu" class="primary-btn">
-
-                🍽 Explore Menu
-
-            </a>
-
-            <a
-            href="https://wa.me/919619091171?text=Hi%20Street%20Delights!%20I'd%20like%20to%20place%20a%20takeaway%20order."
-            class="secondary-btn"
-            target="_blank">
-
-                💬 Pre-Order on WhatsApp
-
-            </a>
-
-        </div>
-
-        <p class="pickup-note">
-
-            📦 Pre-order on WhatsApp and collect your food without waiting.
-
-        </p>
-
-    </div>
-
-    <!-- RIGHT SIDE -->
-
-    <div class="hero-right">
-
-        <div class="hero-glow"></div>
-
-        <!-- Steam -->
-
-        <div class="steam steam1"></div>
-
-        <div class="steam steam2"></div>
-
-        <div class="steam steam3"></div>
-
-        <!-- Momo Image -->
-
-        <img
-        src="1000925819.jpg"
-        alt="Fresh Momos"
-        class="hero-momo">
-
-    </div>
-
-</div>
-
-</section>
-
+}
 /* =========================
    BUTTONS
 ========================= */
