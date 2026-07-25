@@ -613,15 +613,12 @@ section{
 }
 
 .hero-image{
-
-    max-width:520px;
-
+    width:100%;
+    max-width:650px;
+    height:auto;
     position:relative;
-
     z-index:5;
-
     animation:float 4s ease-in-out infinite;
-
 }
 
 @keyframes float{
