@@ -369,21 +369,13 @@ section{
 }
 
 .hero-container{
-
     width:100%;
-
-    max-width:1300px;
-
+    max-width:1400px;
     margin:auto;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
-    gap:70px;
-
+    gap:80px;
 }
 
 .hero-left{
