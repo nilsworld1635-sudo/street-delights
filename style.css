@@ -1489,8 +1489,9 @@ footer p{
     text-align:center;
 }
 
-.hero-momo{
-    max-width:360px;
+.hero-image{
+    max-width:320px;
+    margin:auto;
 }
 
 .hero-glow{
