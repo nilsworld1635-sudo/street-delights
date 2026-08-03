@@ -1,0 +1,228 @@
+/* ======================================================
+   PK'S STREET D-LITE
+   ANIMATIONS
+====================================================== */
+
+/* ===========================
+   GLOBAL TRANSITIONS
+=========================== */
+
+*{
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ===========================
+   FADE UP
+=========================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(60px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   FADE DOWN
+=========================== */
+
+.fade-down{
+    opacity:0;
+    transform:translateY(-60px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.fade-down.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   FADE LEFT
+=========================== */
+
+.fade-left{
+    opacity:0;
+    transform:translateX(-60px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.fade-left.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* ===========================
+   FADE RIGHT
+=========================== */
+
+.fade-right{
+    opacity:0;
+    transform:translateX(60px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.fade-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* ===========================
+   ZOOM
+=========================== */
+
+.zoom-in{
+    opacity:0;
+    transform:scale(.9);
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.zoom-in.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* ===========================
+   FLOAT
+=========================== */
+
+.float{
+    animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   STEAM
+=========================== */
+
+.steam{
+    animation:steam 5s linear infinite;
+}
+
+.steam-two{
+    animation-delay:1.5s;
+}
+
+.steam-three{
+    animation-delay:3s;
+}
+
+@keyframes steam{
+
+    0%{
+        opacity:0;
+        transform:translateY(20px) scale(.8);
+    }
+
+    30%{
+        opacity:.5;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(-140px) scale(1.5);
+    }
+
+}
+
+/* ===========================
+   BUTTON PULSE
+=========================== */
+
+.pulse{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(255,122,0,.45);
+    }
+
+    70%{
+        box-shadow:0 0 0 18px rgba(255,122,0,0);
+    }
+
+    100%{
+        box-shadow:0 0 0 0 rgba(255,122,0,0);
+    }
+
+}
+
+/* ===========================
+   CARD HOVER
+=========================== */
+
+.hover-lift:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+   IMAGE HOVER
+=========================== */
+
+.img-zoom{
+
+    overflow:hidden;
+
+}
+
+.img-zoom img{
+
+    transition:transform .5s ease;
+
+}
+
+.img-zoom:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   ROTATE
+=========================== */
+
+.rotate:hover{
+
+    transform:rotate(5deg);
+
+}

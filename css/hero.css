@@ -1,0 +1,186 @@
+/* ======================================================
+   HERO
+====================================================== */
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 120px 0 90px;
+}
+
+/* Background Image */
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("../images/hero-momos.jpg") center center/cover no-repeat;
+
+    transform: scale(1);
+    animation: heroBackground 8s ease-in-out infinite alternate;
+
+    z-index: -2;
+}
+
+/* Dark Overlay */
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.90) 0%,
+        rgba(0,0,0,.72) 35%,
+        rgba(0,0,0,.50) 65%,
+        rgba(0,0,0,.28) 100%
+    );
+
+    z-index:-1;
+}
+
+/* Hero Content */
+
+.hero-content{
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5%;
+}
+
+.hero-text{
+    max-width: 650px;
+    margin-left:0;
+    color: #fff;
+}
+
+.hero-tag{
+    display: inline-block;
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(15px);
+
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero h1{
+    font-size: clamp(3.8rem,8vw,6.2rem);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero h1 span{
+    background: linear-gradient(90deg,#ff8a00,#ffb347);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    max-width: 560px;
+
+    font-size: 1.2rem;
+    line-height: 1.9;
+
+    opacity: .92;
+
+    margin-bottom: 45px;
+}
+
+/* Text Animation */
+
+.hero-text > *{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: heroFadeUp .9s ease forwards;
+}
+
+.hero-text > *:nth-child(1){
+    animation-delay: .15s;
+}
+
+.hero-text > *:nth-child(2){
+    animation-delay: .35s;
+}
+
+.hero-text > *:nth-child(3){
+    animation-delay: .55s;
+}
+
+.hero-text > *:nth-child(4){
+    animation-delay: .75s;
+}
+
+/* =====================================
+Animations
+===================================== */
+
+@keyframes heroBackground {
+
+    0%{
+        transform: scale(1);
+        filter: brightness(.88);
+        opacity: .92;
+    }
+
+    100%{
+        transform: scale(1.15);
+        filter: brightness(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes heroFadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =====================================
+Responsive
+===================================== */
+
+@media(max-width:768px){
+
+    .hero{
+        padding-top: 110px;
+        min-height: 90vh;
+    }
+
+    .hero-content{
+        padding: 0 25px;
+    }
+
+    .hero h1{
+        font-size: 2.9rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+}

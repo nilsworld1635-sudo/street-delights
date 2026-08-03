@@ -1,0 +1,549 @@
+/* ======================================================
+   NAVIGATION
+====================================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(20, 20, 20, 0.25);
+    backdrop-filter: blur(18px);
+
+    transition: all 0.4s ease;
+}
+
+.header.scrolled{
+
+    height:78px;
+
+    background:rgba(10,10,10,.88);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+.navbar{
+    padding:18px 0;
+    width:100%;
+
+}
+
+.nav-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+}
+
+/* =====================================
+LOGO
+===================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    text-decoration:none;
+
+}
+
+.logo img{
+
+    width:72px;
+
+    height:72px;
+
+    object-fit:contain;
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-text h2{
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    color:#fff;
+
+    line-height:1;
+
+}
+
+.logo-text span{
+
+    color:var(--primary);
+
+    font-size:.78rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-top:6px;
+
+}
+
+/* =====================================
+MENU
+===================================== */
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav-menu li{
+
+    list-style:none;
+
+}
+
+.nav-menu a{
+
+    position:relative;
+
+    color:#fff;
+
+    font-weight:600;
+
+    font-size:.96rem;
+
+    transition:.35s;
+
+}
+
+.nav-menu a:hover{
+
+    color:var(--primary);
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+/* =====================================
+RIGHT SIDE
+===================================== */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.nav-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:13px 26px;
+
+    border-radius:999px;
+
+    font-size:.92rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.nav-btn.call{
+
+    background:linear-gradient(90deg,#ff7a00,#ffab26);
+
+    color:#fff;
+
+    box-shadow:0 12px 30px rgba(255,122,0,.30);
+
+}
+
+.nav-btn.call:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.nav-btn.whatsapp{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+.nav-btn.whatsapp:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================
+HAMBURGER
+===================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.menu-toggle:hover{
+
+    background:var(--primary);
+
+}
+/* =====================================
+MOBILE NAVIGATION
+===================================== */
+
+@media (max-width:991px){
+
+    .menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:90px;
+        right:-100%;
+
+        width:320px;
+        max-width:90%;
+
+        height:calc(100vh - 90px);
+
+        background:rgba(15,15,15,.98);
+
+        backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+
+        padding:40px 30px;
+
+        gap:28px;
+
+        border-left:1px solid rgba(255,255,255,.08);
+
+        transition:.45s ease;
+
+        overflow-y:auto;
+
+    }
+
+    .nav-menu.active{
+
+        right:0;
+
+    }
+
+    .nav-menu li{
+
+        width:100%;
+
+    }
+
+    .nav-menu a{
+
+        display:block;
+
+        width:100%;
+
+        padding:12px 0;
+
+        font-size:1.05rem;
+
+    }
+
+    .nav-right{
+
+        gap:12px;
+
+    }
+
+    .nav-btn{
+
+        padding:12px 18px;
+
+        font-size:.85rem;
+
+    }
+
+}
+
+/* =====================================
+TABLET
+===================================== */
+
+@media (max-width:768px){
+
+    .header{
+
+        height:80px;
+
+    }
+
+    .header.scrolled{
+
+        height:72px;
+
+    }
+
+    .logo img{
+    width:64px;
+    height:64px;
+}
+
+    .logo-text h2{
+
+        font-size:1.1rem;
+
+    }
+
+    .logo-text span{
+
+        font-size:.68rem;
+
+        letter-spacing:1px;
+
+    }
+
+    .nav-menu{
+
+        top:80px;
+
+        height:calc(100vh - 80px);
+
+    }
+
+    .nav-btn.whatsapp{
+
+        display:none;
+
+    }
+
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media (max-width:576px){
+
+    .nav-wrapper{
+
+        gap:16px;
+
+    }
+
+    .logo{
+
+        gap:10px;
+
+    }
+
+    .logo img{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+    .logo-text h2{
+
+        font-size:1rem;
+
+    }
+
+    .logo-text span{
+
+        display:none;
+
+    }
+
+    .nav-btn.call{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        width:44px;
+        height:44px;
+        font-size:20px;
+
+    }
+
+    .nav-menu{
+
+        width:100%;
+
+        max-width:100%;
+
+        border-left:none;
+
+        padding:35px 25px;
+
+    }
+
+}
+
+/* =====================================
+ACTIVE LINK
+===================================== */
+
+.nav-menu a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-menu a.active::after{
+
+    width:100%;
+
+}
+
+/* =====================================
+MENU BACKDROP
+===================================== */
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+
+    z-index:9998;
+
+}
+
+.menu-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* =====================================
+PREMIUM HOVER EFFECT
+===================================== */
+
+.nav-menu a{
+
+    letter-spacing:.2px;
+
+}
+
+.nav-menu a:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.logo:hover{
+
+    transform:scale(1.02);
+
+}

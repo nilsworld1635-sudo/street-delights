@@ -1,0 +1,62 @@
+/* ======================================================
+   PK'S STREET D-LITE
+   VARIABLES
+====================================================== */
+
+:root {
+
+    /* Brand Colors */
+    --primary: #ff7a00;
+    --primary-dark: #e56700;
+    --primary-light: #ffab26;
+
+    /* Background */
+    --dark: #111111;
+    --dark-light: #1c1c1c;
+    --body-bg: #090909;
+    --surface: rgba(255,255,255,.06);
+
+    /* Text */
+    --white: #ffffff;
+    --text: #b8b8b8;
+    --text-light: #d7d7d7;
+    --text-muted: #9b9b9b;
+
+    /* Effects */
+    --border: rgba(255,255,255,.08);
+    --glass: rgba(255,255,255,.08);
+
+    --shadow-sm: 0 8px 20px rgba(0,0,0,.20);
+    --shadow: 0 20px 60px rgba(0,0,0,.25);
+    --shadow-lg: 0 30px 70px rgba(0,0,0,.35);
+
+    --radius-sm: 12px;
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-full: 999px;
+
+    --transition: .35s ease;
+
+    --container: 1400px;
+
+    --header-height: 90px;
+
+    --gradient-primary: linear-gradient(
+        90deg,
+        #ff7a00 0%,
+        #ffab26 100%
+    );
+
+    --gradient-dark: linear-gradient(
+        180deg,
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.85)
+    );
+
+    --glass-blur: blur(18px);
+
+    --z-loader: 99999;
+    --z-header: 999;
+    --z-floating: 9999;
+
+}
